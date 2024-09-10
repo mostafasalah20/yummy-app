@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img {
+    border-radius: 20px;
+
+}
+
+.homeProduct {
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.homeProduct .textTitle {
+    background-color: #ffffffe8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.homeProduct:hover .textTitle {
+    top: 0;
+}
+
+
+/* globals.css */
+.font{
+    font-family: 'Dancing Script', cursive;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chat-popup-button {
+    background-color: #0070f3;
+    color: white;
+    border-radius: 10%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.chat {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 100;
+}
+
+
+
+.chat-popup {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 400px;
+}
+
+
+.chat-popup-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.chat-popup-body {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+.chat-popup-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.user-message {
+    background-color: #e1ffc7;
+    align-self: flex-start;
+}
+
+
+.bot-message {
+    background-color: #f1f0f0;
+    align-self: flex-end;
+}
+
+
+.chat-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.send-button {
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:575px) {
+    .chat {
+        position: fixed;
+        bottom: 30px;
+        right: 0px;
+        z-index: 100;
+    }
+
+    .chat-popup {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* padding: 10px; */
+        position: fixed;
+        bottom: 90px;
+        right: 0px;
+        width: 380px;
+        margin: auto;
+    }
+
+}
